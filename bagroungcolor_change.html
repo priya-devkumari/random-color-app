@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random color app</title>
+    <style>
+    body{
+        text-align: center;
+        margin-top: 250px;
+        font-family:Arial,sans-serif ;
+        transition: bagroundcolor 0.5s ease;
+    }
+    button{
+        font-size:30px ;
+        padding: 10px 20px;
+        cursor:pointer;
+    }
+    </style>
+</head>
+<body>
+     <button onclick=" changebagroundcolor()">click me</button>
+     <script>
+        function changebagroundcolor() {
+            const randomColor= '#'+ math.floor(math.random()*16777215).toString(16);
+            document.body.style.bagroundcolor=randomColor;
+        }
+     </script>
+</body>
+</html>
