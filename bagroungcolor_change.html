@@ -24,6 +24,7 @@
         function changebagroundcolor() {
             const randomColor= '#'+ math.floor(math.random()*16777215).toString(16);
             document.body.style.bagroundcolor=randomColor;
+             document.getElementById("colorCode").textContent = `Current Color: ${randomColor}`;
         }
      </script>
 </body>
